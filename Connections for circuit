@@ -1,0 +1,33 @@
+Connections:
+
+1. ESP32 to L298N Motor Driver
+______________________________
+ ESP32	       -       L298N  |
+______________________________|
+GPIO 18	       |       IN1	  |
+GPIO 19        |       IN2	  |
+GPIO 26        |       IN3	  |
+GPIO 27        |       IN4	  |
+GPIO 23        |       ENA	  |
+GPIO 25        |       ENB	  |
+5V	           |       VCC	  |
+GND            |     	 GND	  |
+_______________|______________|
+
+2. ESP32 to QTR-8A Sensor Array
+_____________________________
+ESP32 	      -     QTR-8A 	 |
+_____________________________|                            
+GPIO 32       |      	A0	 	 |
+GPIO 33	      |       A1	 	 |
+GPIO 34	      |       A2  	 |
+GPIO 35	      |      	A3	 	 |
+GPIO 36	      |      	A4	 	 |
+GPIO 39	      |      	A5	 	 |
+GPIO 12	      |      	A6	 	 |
+GPIO 4	      |      	A7	 	 |
+5V		        |      VCC	 	 |
+GND	          |      GND	 	 |
+______________|______________|
+
+NOTE:Take all the GND and vcc(5v) common from the L298N (motor driver)
