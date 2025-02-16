@@ -36,6 +36,8 @@ Kd (Derivative Gain): 0.8
 These values determine how the bot corrects its path:
 
 Kp (0.045): Controls immediate response to errors. A higher value makes corrections faster but can cause oscillations.
+
 Ki (0.005): Helps eliminate small errors over time. A low value prevents excessive correction buildup.
+
 Kd (0.8): Reduces overshooting by considering the rate of change of error. A high value smooths movements but may slow responses.
 If tuning is needed, try adjusting Kp for faster response, Kd to reduce overshooting, and Ki only if you see steady-state drift.
